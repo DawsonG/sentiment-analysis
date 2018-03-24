@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real-time Voice Sentiment Analysis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>Real-time Voice Sentiment Analysis</h1>
+      <p class="page-description">A small app that analyzes the sentiment of a spoken statement.</p>
+      
+      <h3 class="no-browser-support">Sorry, this application requires Web Speech API.  Try Google Chrome.</h3>
+
+      <div class="app">
+        <h3>Recognition</h3>
+        <div id="final"></div>
+        <div class="list-scroll">
+          <ul id="attempts"></ul>
+        </div>
+        
+        <button id="start-record-btn" title="Start Recognition">Start Recognition</button>
+        <button id="pause-record-btn" title="Pause Recognition">Pause Recognition</button>
+        <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+      </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
